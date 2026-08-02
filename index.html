@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NiKami Labs — Software that means something</title>
+  <meta name="description" content="NiKami Labs builds focused software products: BargBaz, VocabTrove, and Levera. Small indie team shipping production-quality apps." />
+  <meta name="theme-color" content="#0B1524" />
+  <meta property="og:title" content="NiKami Labs — Software that means something" />
+  <meta property="og:description" content="Indie software studio building focused tools for traders, learners, and players." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="logos/nikami-labs-mark.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ══ NAV ══════════════════════════════════════════════════ -->
+<div class="nav-wrapper">
+  <nav class="container nav" aria-label="Primary">
+    <a href="#" class="nav-logo" aria-label="NiKami Labs home">
+      <img class="nav-logo-mark" src="logos/nikami-labs-mark.svg" width="36" height="36" alt="" />
+      <span class="nav-logo-name">NiKami<span>Labs</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#showcase">Showcase</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#products" class="btn btn-primary btn-sm nav-cta">Explore Products</a>
+    <button class="nav-hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" id="menuToggle">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </nav>
+</div>
+
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation" aria-hidden="true">
+  <a href="#products">Products</a>
+  <a href="#showcase">Showcase</a>
+  <a href="#stack">Stack</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#products" class="btn btn-primary">Explore Products</a>
+</div>
+
+
+<main id="main">
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+    <div class="hero-grid-bg"></div>
+  </div>
+  <div class="container hero-inner">
+
+    <div class="hero-text reveal">
+      <h1 class="hero-headline" id="hero-heading">
+        Software that<br>
+        <span class="highlight">solves</span> real<br>
+        problems.
+      </h1>
+      <p class="hero-sub">
+        NiKami Labs builds focused tools for traders, language learners,
+        and card-game players. Small team. Sharp products. Shipped and in production.
+      </p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-primary btn-lg">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          See our products
+        </a>
+        <a href="#showcase" class="btn btn-secondary btn-lg">View showcase</a>
+      </div>
+      <dl class="hero-stats">
+        <div class="hero-stat">
+          <dt class="hero-stat-value" data-count="3">3</dt>
+          <dd class="hero-stat-label">Live products</dd>
+        </div>
+        <div class="hero-stat">
+          <dt class="hero-stat-value" data-count="2">2</dt>
+          <dd class="hero-stat-label">Platforms</dd>
+        </div>
+        <div class="hero-stat">
+          <dt class="hero-stat-value">100%</dt>
+          <dd class="hero-stat-label">In-house built</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="hero-visual reveal reveal-d2" aria-hidden="true">
+      <div class="hero-showcase">
+        <div class="showcase-card showcase-card-main glass">
+          <img src="screenshots/vocabTrove/vocabtrove-reader-phone.png" alt="" width="280" height="560" loading="eager" />
+          <span class="showcase-label">VocabTrove</span>
+        </div>
+        <div class="showcase-card showcase-card-secondary glass">
+          <img src="screenshots/bargbaz/Screenshot_1784278990.png" alt="" width="200" height="400" loading="eager" />
+          <span class="showcase-label">BargBaz</span>
+        </div>
+        <div class="showcase-card showcase-card-tertiary glass">
+          <img src="screenshots/vocabTrove/vocabtrove-fa-review-dark.png" alt="" width="180" height="360" loading="lazy" />
+          <span class="showcase-label">Flashcards</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══ PRODUCTS (Bento) ═════════════════════════════════════ -->
+<section id="products" class="section section-dark" aria-labelledby="products-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Products</p>
+      <h2 class="section-title" id="products-heading">Three tools. One focus.</h2>
+      <p class="section-sub">Each product is purpose-built for a specific domain — no bloat, no feature creep.</p>
+    </div>
+
+    <div class="products-row">
+
+      <!-- BargBaz -->
+      <article class="product-card glass reveal" aria-labelledby="bargbaz-name">
+        <div class="product-card-header-band banner-bargbaz">
+          <img src="logos/bargbaz-final-pivot-icon.svg" width="40" height="40" alt="" class="product-band-logo" />
+          <div>
+            <h3 class="product-name" id="bargbaz-name">BargBaz</h3>
+            <span class="badge badge-green">Live</span>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-desc">
+            Persian card-game platform with online rooms, local network play, and solo practice.
+            Real-time multiplayer, QR join codes, mobile-first.
+          </p>
+          <div class="product-tags">
+            <span class="product-tag">Gaming</span>
+            <span class="product-tag">Multiplayer</span>
+            <span class="product-tag">PWA</span>
+          </div>
+          <div class="product-platforms">
+            <span class="platform-badge platform-web">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Web App
+            </span>
+            <span class="platform-badge platform-android">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.341a.5.5 0 0 1-.5.5H6.977a.5.5 0 0 1-.5-.5V9.5h11.046v5.841zm-10.98-9.5 1.195-2.39a.5.5 0 0 1 .894.447L7.5 5.8A7.5 7.5 0 0 0 4.5 12h15a7.5 7.5 0 0 0-3-6.2L15.368 3.898a.5.5 0 1 1 .894-.447L17.457 5.84A7.5 7.5 0 0 0 4.5 12M9.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm5 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/></svg>
+              Android
+            </span>
+          </div>
+          <div class="product-footer">
+            <span class="product-stack font-mono">Flutter · PWA · WebSocket</span>
+            <a href="https://bargbaz.vercel.app" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+              Open <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- VocabTrove -->
+      <article class="product-card glass reveal reveal-d1" aria-labelledby="vocab-name">
+        <div class="product-card-header-band banner-vocab">
+          <img src="logos/vocabtrove-icon.svg" width="40" height="40" alt="" class="product-band-logo" />
+          <div>
+            <h3 class="product-name" id="vocab-name">VocabTrove</h3>
+            <span class="badge badge-green">Live</span>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-desc">
+            Language-learning app focused on reading and vocabulary. Tap to look up words,
+            save flashcards, and review with spaced repetition.
+          </p>
+          <div class="product-tags">
+            <span class="product-tag">Education</span>
+            <span class="product-tag">Mobile</span>
+            <span class="product-tag">Spaced Rep.</span>
+          </div>
+          <div class="product-platforms">
+            <span class="platform-badge platform-ios">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              iOS
+            </span>
+            <span class="platform-badge platform-android">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.341a.5.5 0 0 1-.5.5H6.977a.5.5 0 0 1-.5-.5V9.5h11.046v5.841zm-10.98-9.5 1.195-2.39a.5.5 0 0 1 .894.447L7.5 5.8A7.5 7.5 0 0 0 4.5 12h15a7.5 7.5 0 0 0-3-6.2L15.368 3.898a.5.5 0 1 1 .894-.447L17.457 5.84A7.5 7.5 0 0 0 4.5 12M9.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm5 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/></svg>
+              Android
+            </span>
+            <span class="platform-badge platform-web">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Web
+            </span>
+          </div>
+          <div class="product-footer">
+            <span class="product-stack font-mono">Flutter · Next.js · Supabase</span>
+            <a href="https://vocab-trove.vercel.app" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
+              Open <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Levera -->
+      <article class="product-card glass reveal reveal-d2" aria-labelledby="levera-name">
+        <div class="product-card-header-band banner-purple">
+          <img src="logos/levera-logo.svg" width="40" height="40" alt="" class="product-band-logo" />
+          <div>
+            <h3 class="product-name" id="levera-name">Levera</h3>
+            <span class="badge badge-purple">Beta</span>
+          </div>
+        </div>
+        <div class="product-card-body">
+          <p class="product-desc">
+            Margin trading simulator for Persian exchanges. Go long or short with 1×–20× leverage
+            on live Wallex order books with stop-loss and take-profit.
+          </p>
+          <div class="product-tags">
+            <span class="product-tag">Trading</span>
+            <span class="product-tag">Fintech</span>
+            <span class="product-tag">Live Data</span>
+          </div>
+          <div class="product-platforms">
+            <span class="platform-badge platform-web">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Web App
+            </span>
+          </div>
+          <div class="product-footer">
+            <span class="product-stack font-mono">Python · FastAPI · Supabase</span>
+            <span class="btn-coming-soon">Coming soon</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- More coming — full-width strip -->
+      <div class="product-upcoming-strip reveal reveal-d3" aria-label="More products coming">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        <span>More products on the way</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══ SHOWCASE PHONE CAROUSEL ═══════════════════════════════ -->
+<section id="showcase" class="section section-muted" aria-labelledby="showcase-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Showcase</p>
+      <h2 class="section-title" id="showcase-heading">Built for real users.</h2>
+      <p class="section-sub">Production interfaces across mobile and web — designed for clarity, speed, and daily use.</p>
+    </div>
+  </div>
+
+  <div class="phone-carousel reveal" role="region" aria-label="Product screenshots" aria-roledescription="carousel">
+
+    <!-- the stage clips overflow; cards are positioned by JS -->
+    <div class="phone-stage" id="phoneStage">
+      <div class="phone-track" id="phoneTrack">
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="1 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/bargbaz/Screenshot_1784278990.png" alt="BargBaz — Hokm game, trump suit selection" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">BargBaz</span>
+            Multiplayer card game
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="2 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/bargbaz/Screenshot_1784278939.png" alt="BargBaz — online room with QR code join" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">BargBaz</span>
+            Online rooms &amp; QR join
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="3 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/bargbaz/Screenshot_1784278960.png" alt="BargBaz — active Hokm game screen" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">BargBaz</span>
+            Active game
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="4 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/bargbaz/Screenshot_1784278948.png" alt="BargBaz — scoreboard" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">BargBaz</span>
+            Score board
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="5 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/vocabTrove/vocabtrove-reader-phone.png" alt="VocabTrove — reader with tap-to-define lookup" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">VocabTrove</span>
+            Reading &amp; vocab lookup
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="6 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/vocabTrove/vocabtrove-fa-exam-dark.png" alt="VocabTrove — placement exam" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">VocabTrove</span>
+            Placement exam
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="7 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/vocabTrove/vocabtrove-fa-review-dark.png" alt="VocabTrove — flashcard review session" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">VocabTrove</span>
+            Flashcard review
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="8 of 8">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/vocabTrove/vocabtrove-fa-profile.png" alt="VocabTrove — learner profile and stats" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">VocabTrove</span>
+            Learner profile
+          </figcaption>
+        </figure>
+
+      </div><!-- /phone-track -->
+    </div><!-- /phone-stage -->
+
+    <div class="slider-controls">
+      <button class="slider-btn" id="sliderPrev" aria-label="Previous screenshot">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slides"></div>
+      <button class="slider-btn" id="sliderNext" aria-label="Next screenshot">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+
+  </div><!-- /phone-carousel -->
+</section>
+
+
+<!-- ══ TECH STACK ════════════════════════════════════════════ -->
+<section id="stack" class="section section-dark" aria-labelledby="stack-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">Tech Stack</p>
+      <h2 class="section-title" id="stack-heading">Built on solid foundations.</h2>
+      <p class="section-sub">We pick proven tools that let a small team move fast without cutting corners.</p>
+    </div>
+    <div class="stack-grid reveal">
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--blue">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.001 2C6.476 2 2 6.476 2 12.001s4.476 10.001 10.001 10.001 10.001-4.476 10.001-10.001S17.526 2 12.001 2zm-1.051 14.93c-3.456-.406-6.124-3.351-6.124-6.929 0-.624.082-1.228.234-1.803l4.343 4.343v.865c0 .953.777 1.731 1.731 1.731l-.184 1.793zm6.179-2.248c-.236-.73-.952-1.252-1.793-1.252h-.866v-2.597c0-.477-.39-.866-.866-.866H7.806V8.1h1.73c.477 0 .866-.39.866-.866V5.504a8.17 8.17 0 0 1 4.767 2.21l-1.731 1.731c-.338.338-.338.887 0 1.225l1.83 1.83a8.22 8.22 0 0 1 1.862 1.862v-.001a8.17 8.17 0 0 1-.001 1.321z"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">Flutter</div>
+          <div class="stack-desc">Cross-platform mobile &amp; web</div>
+        </div>
+      </div>
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--white">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.573 0z"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">Next.js</div>
+          <div class="stack-desc">Web frontend &amp; SSR</div>
+        </div>
+      </div>
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--green">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C.303 12.648.72 13.5 1.5 13.5h7.517l-1.9 9.46c-.19.947 1.007 1.52 1.674.762l10.05-11.95c.455-.54.04-1.365-.586-1.365h-7.15l1.795-9.371z"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">Supabase</div>
+          <div class="stack-desc">Database, auth &amp; realtime</div>
+        </div>
+      </div>
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--yellow">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 11.58l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.28-.25.26-.31.22-.38.21-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.31.33-.25.35-.19.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm6.07 7.44l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01-1.35-.04-1.14-.14-.95-.22-.78-.28-.63-.35-.5-.4-.39-.44-.29-.46-.21-.48-.13-.49-.07-.48-.02-.47.02-.44.07-.41.11-.39.17-.35.23-.33.29-.28.35-.24.4-.2.45-.14.52-.1.57-.07.63-.02.69.02.73.07.77.12.79.17.82.22.83.27.84.3.83.35.81.39.77.44.71.48.65.52.57.55.49.58.41.6.3.62.2.64.09.65-.01.66-.12.65-.21.65-.3.62-.4.61-.49.57-.58.53-.65.49-.72.43-.79.37-.85.29-.91.23-.97.14-1.04.06-.55.01z"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">Python / FastAPI</div>
+          <div class="stack-desc">Backend APIs &amp; services</div>
+        </div>
+      </div>
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">PWA</div>
+          <div class="stack-desc">Offline-ready web apps</div>
+        </div>
+      </div>
+      <div class="stack-item glass">
+        <div class="stack-icon stack-icon--amber">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="stack-info">
+          <div class="stack-name">WebSocket</div>
+          <div class="stack-desc">Real-time multiplayer sync</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- ══ ABOUT / TEAM ══════════════════════════════════════════ -->
+<section id="about" class="section section-muted" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="eyebrow">About</p>
+      <h2 class="section-title" id="about-heading">Small team, sharp tools.</h2>
+      <p class="section-sub">
+        NiKami Labs is an indie software studio built on a simple idea: build tightly scoped,
+        production-quality products in-house — and keep shipping. Focused on typography,
+        interaction polish, and interfaces that feel intentional on every screen size.
+      </p>
+    </div>
+
+    <!-- Team / Founder -->
+    <div class="team-section reveal">
+      <div class="team-divider" style="display:none"></div>
+      <div class="team-grid">
+        <div class="team-card glass">
+          <div class="team-avatar" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <circle cx="32" cy="32" r="32" fill="rgba(245,158,11,0.08)"/>
+              <circle cx="32" cy="26" r="10" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.4)" stroke-width="1.5"/>
+              <path d="M12 54c0-11.046 8.954-20 20-20s20 8.954 20 20" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+            </svg>
+            <div class="team-avatar-initials">NK</div>
+          </div>
+          <div class="team-info">
+            <div class="team-name">Founder</div>
+            <div class="team-role">Engineer &amp; Designer</div>
+            <p class="team-bio">Designing, building, and shipping every product end-to-end. From backend APIs to pixel-perfect mobile UIs.</p>
+            <div class="team-links">
+              <a href="mailto:nikamilabs@gmail.com" class="team-link" aria-label="Email">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                nikamilabs@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="team-card team-card--cta glass">
+          <div class="team-cta-content">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+            <h3>Want to collaborate?</h3>
+            <p>We're always open to interesting ideas, partnerships, or contract work in mobile, fintech, or edtech.</p>
+            <a href="mailto:nikamilabs@gmail.com" class="btn btn-primary btn-sm">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CTA BAND ════════════════════════════════════════════════ -->
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="container">
+    <div class="cta-band-inner glass">
+      <div class="cta-band-glow" aria-hidden="true"></div>
+      <h2 class="cta-band-title reveal" id="cta-heading">
+        Ready to explore?<br>
+        <span class="cta-highlight">Pick a product and dive in.</span>
+      </h2>
+      <p class="cta-band-sub reveal reveal-d1">All products are live. No signup needed to start.</p>
+      <div class="cta-band-actions reveal reveal-d2">
+        <a href="https://vocab-trove.vercel.app" class="btn btn-accent btn-lg" target="_blank" rel="noopener">
+          <img src="logos/vocabtrove-icon.svg" width="18" height="18" alt="" style="border-radius:4px" />
+          Open VocabTrove
+        </a>
+        <a href="https://bargbaz.vercel.app" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+          <img src="logos/bargbaz-final-pivot-icon.svg" width="18" height="18" alt="" style="border-radius:4px" />
+          Open BargBaz
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ══ FOOTER ═════════════════════════════════════════════════ -->
+<footer id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img class="footer-logo-mark" src="logos/nikami-labs-mark.svg" width="32" height="32" alt="" />
+          <span class="footer-logo-name">NiKami<span>Labs</span></span>
+        </div>
+        <p class="footer-tagline">Indie software studio building focused tools for traders, learners, and players.</p>
+        <div class="footer-social">
+          <a href="mailto:nikamilabs@gmail.com" class="social-link" aria-label="Email us">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://github.com/nikamilabs" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-row">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="https://bargbaz.vercel.app" target="_blank" rel="noopener">BargBaz</a></li>
+            <li><a href="https://vocab-trove.vercel.app" target="_blank" rel="noopener">VocabTrove</a></li>
+            <li><span class="footer-link-muted">Levera <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">Soon</span></span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://bargbaz.vercel.app" target="_blank" rel="noopener">BargBaz</a></li>
+            <li><a href="https://vocab-trove.vercel.app" target="_blank" rel="noopener">VocabTrove</a></li>
+            <li><span class="footer-link-muted">Levera <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">Soon</span></span></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#stack">Tech Stack</a></li>
+            <li><a href="mailto:nikamilabs@gmail.com">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 NiKami Labs. All rights reserved.</span>
+      <span class="footer-made">Crafted with care, shipped with pride</span>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // ── Mobile menu ────────────────────────────────────────────
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  function setMenuOpen(open) {
+    mobileMenu.classList.toggle('open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    mobileMenu.setAttribute('aria-hidden', String(!open));
+    document.body.classList.toggle('menu-open', open);
+  }
+
+  menuToggle.addEventListener('click', () => setMenuOpen(!mobileMenu.classList.contains('open')));
+  mobileMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
+
+  document.addEventListener('click', (e) => {
+    if (mobileMenu.classList.contains('open') &&
+        !mobileMenu.contains(e.target) &&
+        !menuToggle.contains(e.target)) {
+      setMenuOpen(false);
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) setMenuOpen(false);
+  });
+
+  // ── Scroll reveal ──────────────────────────────────────────
+  const revealObserver = new IntersectionObserver(
+    (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); }),
+    { threshold: 0.1 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ── Nav active state on scroll ─────────────────────────────
+  const sections = document.querySelectorAll('section[id], footer[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -50% 0px' });
+
+  sections.forEach(s => navObserver.observe(s));
+
+  // ── Phone Carousel ─────────────────────────────────────────
+  (function () {
+    const track   = document.getElementById('phoneTrack');
+    const stage   = document.getElementById('phoneStage');
+    const dotsEl  = document.getElementById('sliderDots');
+    const btnPrev = document.getElementById('sliderPrev');
+    const btnNext = document.getElementById('sliderNext');
+    if (!track) return;
+
+    const cards = Array.from(track.querySelectorAll('.phone-card'));
+    const total = cards.length;
+    let cur     = 0;
+    let autoId  = null;
+
+    // build dots
+    cards.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'slider-dot';
+      btn.setAttribute('role', 'tab');
+      btn.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      btn.setAttribute('aria-selected', String(i === 0));
+      btn.addEventListener('click', () => goTo(i, true));
+      dotsEl.appendChild(btn);
+    });
+
+    // clicking a side card navigates to it
+    cards.forEach((card, i) => {
+      card.addEventListener('click', () => { if (i !== cur) goTo(i, true); });
+    });
+
+    function goTo(idx, userAction) {
+      cur = (idx + total) % total;
+
+      // update classes
+      cards.forEach((c, i) => {
+        c.classList.toggle('is-active',   i === cur);
+        c.classList.toggle('is-adjacent', i === (cur - 1 + total) % total || i === (cur + 1) % total);
+        c.setAttribute('aria-hidden', i !== cur ? 'true' : 'false');
+      });
+
+      dotsEl.querySelectorAll('.slider-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === cur);
+        d.setAttribute('aria-selected', String(i === cur));
+      });
+
+      // center the active card inside the stage
+      const stageW  = stage.offsetWidth;
+      const cardEl  = cards[cur];
+      const cardW   = cardEl.offsetWidth;
+      const cardGap = parseInt(getComputedStyle(cardEl).marginLeft) +
+                      parseInt(getComputedStyle(cardEl).marginRight);
+      const fullW   = cardW + cardGap;
+      // offset = position of active card's left edge relative to track start
+      const offset  = cur * fullW;
+      // we want that card centered in the stage
+      const shift   = offset - (stageW / 2) + (fullW / 2);
+      track.style.transform = `translateX(${-shift}px)`;
+
+      if (userAction) restartAuto();
+    }
+
+    function restartAuto() {
+      clearInterval(autoId);
+      autoId = setInterval(() => goTo(cur + 1), 4000);
+    }
+
+    btnPrev.addEventListener('click', () => goTo(cur - 1, true));
+    btnNext.addEventListener('click', () => goTo(cur + 1, true));
+
+    // keyboard
+    track.closest('.phone-carousel').addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft')  { goTo(cur - 1, true); e.preventDefault(); }
+      if (e.key === 'ArrowRight') { goTo(cur + 1, true); e.preventDefault(); }
+    });
+
+    // swipe
+    let touchX = null;
+    stage.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
+    stage.addEventListener('touchend', e => {
+      if (touchX === null) return;
+      const dx = e.changedTouches[0].clientX - touchX;
+      if (Math.abs(dx) > 40) goTo(dx < 0 ? cur + 1 : cur - 1, true);
+      touchX = null;
+    }, { passive: true });
+
+    // init — start at middle slide so both sides peek in symmetrically
+    requestAnimationFrame(() => {
+      goTo(Math.floor(total / 2));
+      restartAuto();
+    });
+
+    // pause on hover/focus
+    const root = track.closest('.phone-carousel');
+    root.addEventListener('mouseenter', () => clearInterval(autoId));
+    root.addEventListener('mouseleave', restartAuto);
+    root.addEventListener('focusin',   () => clearInterval(autoId));
+    root.addEventListener('focusout',  restartAuto);
+
+    // recalc on resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => goTo(cur), 100);
+    });
+  })();
+</script>
+
+</body>
+</html>

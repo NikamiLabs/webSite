@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">VocabTrove icon mark</title>
+  <desc id="desc">A flat geometric V monogram with a subtle transparent T and keyhole cutout.</desc>
+  <defs>
+    <mask id="vt-cutout" maskUnits="userSpaceOnUse">
+      <rect width="512" height="512" fill="#fff"/>
+      <path d="M150 104H362L342 158H286V280L256 336L226 280V158H170Z" fill="#000"/>
+    </mask>
+  </defs>
+  <g mask="url(#vt-cutout)">
+    <path d="M52 64H176L256 320L212 448Z" fill="#1a3a24"/>
+    <path d="M336 64H460L300 448H212L256 320Z" fill="#1e7a47"/>
+    <path d="M212 448H300L256 320Z" fill="#f5c842"/>
+  </g>
+</svg>

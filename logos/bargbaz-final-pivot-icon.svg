@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="BargBaz final abstract app icon">
+  <defs>
+    <radialGradient id="bg" cx="36%" cy="24%" r="88%">
+      <stop offset="0" stop-color="#1f7a46"/>
+      <stop offset=".58" stop-color="#103b25"/>
+      <stop offset="1" stop-color="#07150f"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="124" y1="86" x2="396" y2="426" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff1a8"/>
+      <stop offset=".48" stop-color="#dfbd3f"/>
+      <stop offset="1" stop-color="#a67813"/>
+    </linearGradient>
+    <linearGradient id="green" x1="110" y1="92" x2="390" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ef0b6"/>
+      <stop offset="1" stop-color="#1fbd73"/>
+    </linearGradient>
+    <symbol id="pivotMark" viewBox="0 0 512 512">
+      <path fill="url(#gold)" d="M253 82c60-3 115 27 145 78 8 13 4 30-8 39l-82 61c-18-35-52-58-92-62l-35-83c17-20 40-31 72-33z"/>
+      <path fill="url(#green)" d="M430 253c3 60-27 115-78 145-13 8-30 4-39-8l-61-82c35-18 58-52 62-92l83-35c20 17 31 40 33 72z"/>
+      <path fill="url(#gold)" d="M259 430c-60 3-115-27-145-78-8-13-4-30 8-39l82-61c18 35 52 58 92 62l35 83c-17 20-40 31-72 33z"/>
+      <path fill="url(#green)" d="M82 259c-3-60 27-115 78-145 13-8 30-4 39 8l61 82c-35 18-58 52-62 92l-83 35c-20-17-31-40-33-72z"/>
+      <path fill="#07150f" d="M256 194c38 0 71 25 88 62-17 37-50 62-88 62s-71-25-88-62c17-37 50-62 88-62z"/>
+      <path fill="#f6f2dd" d="M201 256c13-22 31-38 55-46-12 25-30 43-55 55v-9z"/>
+    </symbol>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <use href="#pivotMark"/>
+</svg>
