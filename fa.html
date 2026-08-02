@@ -1,50 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NiKami Labs — Software that means something</title>
-  <meta name="description" content="NiKami Labs builds focused software products: BargBaz, VocabTrove, and Levera. Small indie team shipping production-quality apps." />
+  <title>نیکامی لبز — نرم‌افزاری که معنا دارد</title>
+  <meta name="description" content="نیکامی لبز نرم‌افزارهای متمرکز می‌سازد: برگ‌باز، وکب‌تروو و لِورا. تیم کوچک، محصولات حرفه‌ای، در دسترس." />
   <meta name="theme-color" content="#0B1524" />
-  <meta property="og:title" content="NiKami Labs — Software that means something" />
-  <meta property="og:description" content="Indie software studio building focused tools for traders, learners, and players." />
+  <meta property="og:title" content="نیکامی لبز — نرم‌افزاری که معنا دارد" />
+  <meta property="og:description" content="استودیوی نرم‌افزاری مستقل برای معامله‌گران، زبان‌آموزان و بازیکنان." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="logos/nikami-labs-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="alternate" hreflang="fa" href="fa.html" />
+  <link rel="alternate" hreflang="en" href="index.html" />
   <style>
-    .lang-switcher { display:flex; align-items:center; gap:6px; margin-left:12px; }
-    .lang-btn { display:inline-flex; align-items:center; padding:4px 10px; border-radius:6px; font-size:12px; font-weight:500; text-decoration:none; border:1px solid rgba(255,255,255,0.12); color:rgba(255,255,255,0.6); transition:all 0.2s; }
-    .lang-btn:hover { border-color:rgba(255,255,255,0.3); color:#fff; }
-    .lang-btn.active { border-color:var(--accent); color:var(--accent); }
+    /* ── Farsi font ─────────────────────────────────────────── */
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+    :root {
+      --font-fa: 'Vazirmatn', 'Tahoma', 'Arial', sans-serif;
+    }
+
+    html[lang="fa"] body,
+    html[lang="fa"] * {
+      font-family: var(--font-fa) !important;
+      letter-spacing: 0 !important;
+    }
+
+    /* RTL nav adjustments */
+    html[lang="fa"] .nav { flex-direction: row-reverse; }
+    html[lang="fa"] .nav-links { flex-direction: row-reverse; }
+    html[lang="fa"] .hero-inner { flex-direction: row-reverse; }
+    html[lang="fa"] .hero-ctas { flex-direction: row-reverse; justify-content: flex-end; }
+    html[lang="fa"] .hero-stats { flex-direction: row-reverse; }
+    html[lang="fa"] .product-card-header-band { flex-direction: row-reverse; }
+    html[lang="fa"] .product-footer { flex-direction: row-reverse; }
+    html[lang="fa"] .stack-item { flex-direction: row-reverse; text-align: right; }
+    html[lang="fa"] .team-card { flex-direction: column; }
+    html[lang="fa"] .footer-top { flex-direction: row-reverse; }
+    html[lang="fa"] .footer-links-row { flex-direction: row-reverse; }
+    html[lang="fa"] .footer-bottom { flex-direction: row-reverse; }
+    html[lang="fa"] .cta-band-actions { flex-direction: row-reverse; }
+    html[lang="fa"] .btn svg:first-child { margin-left: 8px; margin-right: 0; }
+    html[lang="fa"] .btn svg:last-child  { margin-right: 8px; margin-left: 0; transform: scaleX(-1); }
+    html[lang="fa"] .nav-logo { flex-direction: row-reverse; }
+    html[lang="fa"] .product-tags { flex-direction: row-reverse; flex-wrap: wrap; justify-content: flex-end; }
+    html[lang="fa"] .product-platforms { flex-direction: row-reverse; flex-wrap: wrap; }
+    html[lang="fa"] .platform-badge { flex-direction: row-reverse; }
+    html[lang="fa"] .team-links { flex-direction: row-reverse; }
+    html[lang="fa"] .team-link { flex-direction: row-reverse; }
+    html[lang="fa"] .footer-brand { text-align: right; }
+    html[lang="fa"] .footer-logo { flex-direction: row-reverse; }
+    html[lang="fa"] .footer-social { justify-content: flex-end; }
+    html[lang="fa"] .footer-col { text-align: right; }
+    html[lang="fa"] .mobile-menu { text-align: right; }
+    html[lang="fa"] .slider-controls { flex-direction: row-reverse; }
+    html[lang="fa"] #sliderPrev svg { transform: scaleX(-1); }
+    html[lang="fa"] #sliderNext svg { transform: scaleX(-1); }
+
+    /* Language switcher */
+    .lang-switcher {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-inline-start: 12px;
+    }
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.6);
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { border-color: rgba(255,255,255,0.3); color: #fff; }
+    .lang-btn.active { border-color: var(--accent); color: var(--accent); }
+    html[lang="fa"] .nav { gap: 0; }
+    html[lang="fa"] .lang-switcher { margin-inline-start: 0; margin-inline-end: 12px; }
   </style>
 </head>
 <body>
 
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
 
 <!-- ══ NAV ══════════════════════════════════════════════════ -->
 <div class="nav-wrapper">
-  <nav class="container nav" aria-label="Primary">
-    <a href="#" class="nav-logo" aria-label="NiKami Labs home">
+  <nav class="container nav" aria-label="ناوبری اصلی">
+    <a href="#" class="nav-logo" aria-label="صفحه اصلی نیکامی لبز">
       <img class="nav-logo-mark" src="logos/nikami-labs-mark.svg" width="36" height="36" alt="" />
       <span class="nav-logo-name">NiKami<span>Labs</span></span>
     </a>
     <ul class="nav-links">
-      <li><a href="#products">Products</a></li>
-      <li><a href="#showcase">Showcase</a></li>
-      <li><a href="#stack">Stack</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#products">محصولات</a></li>
+      <li><a href="#showcase">نمایشگاه</a></li>
+      <li><a href="#stack">فناوری</a></li>
+      <li><a href="#about">درباره ما</a></li>
+      <li><a href="#contact">تماس</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:8px;">
       <div class="lang-switcher">
-        <a href="index.html" class="lang-btn active">EN</a>
-        <a href="fa.html" class="lang-btn">FA</a>
+        <a href="index.html" class="lang-btn">EN</a>
+        <a href="fa.html" class="lang-btn active">FA</a>
       </div>
-      <a href="#products" class="btn btn-primary btn-sm nav-cta">Explore Products</a>
+      <a href="#products" class="btn btn-primary btn-sm nav-cta">مشاهده محصولات</a>
     </div>
-    <button class="nav-hamburger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" id="menuToggle">
+    <button class="nav-hamburger" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileMenu" id="menuToggle">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
         <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
       </svg>
@@ -52,17 +116,17 @@
   </nav>
 </div>
 
-<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation" aria-hidden="true">
-  <a href="#products">Products</a>
-  <a href="#showcase">Showcase</a>
-  <a href="#stack">Stack</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="ناوبری" aria-hidden="true">
+  <a href="#products">محصولات</a>
+  <a href="#showcase">نمایشگاه</a>
+  <a href="#stack">فناوری</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس</a>
   <div style="display:flex;gap:8px;padding:4px 0;">
-    <a href="index.html" class="lang-btn active">EN</a>
-    <a href="fa.html" class="lang-btn">FA</a>
+    <a href="index.html" class="lang-btn">EN</a>
+    <a href="fa.html" class="lang-btn active">FA</a>
   </div>
-  <a href="#products" class="btn btn-primary">Explore Products</a>
+  <a href="#products" class="btn btn-primary">مشاهده محصولات</a>
 </div>
 
 
@@ -80,33 +144,33 @@
 
     <div class="hero-text reveal">
       <h1 class="hero-headline" id="hero-heading">
-        Software that<br>
-        <span class="highlight">solves</span> real<br>
-        problems.
+        نرم‌افزاری که<br>
+        مشکلات واقعی را<br>
+        <span class="highlight">حل می‌کند.</span>
       </h1>
       <p class="hero-sub">
-        NiKami Labs builds focused tools for traders, language learners,
-        and card-game players. Small team. Sharp products. Shipped and in production.
+        نیکامی لبز ابزارهای متمرکزی برای معامله‌گران، زبان‌آموزان
+        و بازیکنان ورق می‌سازد. تیم کوچک. محصولات تیزبین. در حال اجرا.
       </p>
       <div class="hero-ctas">
         <a href="#products" class="btn btn-primary btn-lg">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          See our products
+          مشاهده محصولات
         </a>
-        <a href="#showcase" class="btn btn-secondary btn-lg">View showcase</a>
+        <a href="#showcase" class="btn btn-secondary btn-lg">نمایشگاه</a>
       </div>
       <dl class="hero-stats">
         <div class="hero-stat">
-          <dt class="hero-stat-value" data-count="3">3</dt>
-          <dd class="hero-stat-label">Live products</dd>
+          <dt class="hero-stat-value" data-count="3">۳</dt>
+          <dd class="hero-stat-label">محصول فعال</dd>
         </div>
         <div class="hero-stat">
-          <dt class="hero-stat-value" data-count="2">2</dt>
-          <dd class="hero-stat-label">Platforms</dd>
+          <dt class="hero-stat-value" data-count="2">۲</dt>
+          <dd class="hero-stat-label">پلتفرم</dd>
         </div>
         <div class="hero-stat">
-          <dt class="hero-stat-value">100%</dt>
-          <dd class="hero-stat-label">In-house built</dd>
+          <dt class="hero-stat-value">۱۰۰٪</dt>
+          <dd class="hero-stat-label">ساخت داخلی</dd>
         </div>
       </dl>
     </div>
@@ -119,11 +183,11 @@
         </div>
         <div class="showcase-card showcase-card-secondary glass">
           <img src="screenshots/bargbaz/Screenshot_1784278990.png" alt="" width="200" height="400" loading="eager" />
-          <span class="showcase-label">BargBaz</span>
+          <span class="showcase-label">برگ‌باز</span>
         </div>
         <div class="showcase-card showcase-card-tertiary glass">
           <img src="screenshots/vocabTrove/vocabtrove-fa-review-dark.png" alt="" width="180" height="360" loading="lazy" />
-          <span class="showcase-label">Flashcards</span>
+          <span class="showcase-label">فلش‌کارت</span>
         </div>
       </div>
     </div>
@@ -138,9 +202,9 @@
 <section id="products" class="section section-dark" aria-labelledby="products-heading">
   <div class="container">
     <div class="section-header reveal">
-      <p class="eyebrow">Products</p>
-      <h2 class="section-title" id="products-heading">Three tools. One focus.</h2>
-      <p class="section-sub">Each product is purpose-built for a specific domain — no bloat, no feature creep.</p>
+      <p class="eyebrow">محصولات</p>
+      <h2 class="section-title" id="products-heading">سه ابزار. یک هدف.</h2>
+      <p class="section-sub">هر محصول برای یک حوزه خاص ساخته شده — بدون اضافه‌کاری، بدون پراکندگی.</p>
     </div>
 
     <div class="products-row">
@@ -150,34 +214,34 @@
         <div class="product-card-header-band banner-bargbaz">
           <img src="logos/bargbaz-final-pivot-icon.svg" width="40" height="40" alt="" class="product-band-logo" />
           <div>
-            <h3 class="product-name" id="bargbaz-name">BargBaz</h3>
-            <span class="badge badge-green">Live</span>
+            <h3 class="product-name" id="bargbaz-name">برگ‌باز</h3>
+            <span class="badge badge-green">فعال</span>
           </div>
         </div>
         <div class="product-card-body">
           <p class="product-desc">
-            Persian card-game platform with online rooms, local network play, and solo practice.
-            Real-time multiplayer, QR join codes, mobile-first.
+            پلتفرم بازی ورق فارسی با اتاق‌های آنلاین، بازی شبکه محلی و تمرین انفرادی.
+            چندنفره آنی، کدهای QR برای ورود، موبایل‌محور.
           </p>
           <div class="product-tags">
-            <span class="product-tag">Gaming</span>
-            <span class="product-tag">Multiplayer</span>
+            <span class="product-tag">بازی</span>
+            <span class="product-tag">چندنفره</span>
             <span class="product-tag">PWA</span>
           </div>
           <div class="product-platforms">
             <span class="platform-badge platform-web">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Web App
+              وب اپ
             </span>
             <span class="platform-badge platform-android">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.341a.5.5 0 0 1-.5.5H6.977a.5.5 0 0 1-.5-.5V9.5h11.046v5.841zm-10.98-9.5 1.195-2.39a.5.5 0 0 1 .894.447L7.5 5.8A7.5 7.5 0 0 0 4.5 12h15a7.5 7.5 0 0 0-3-6.2L15.368 3.898a.5.5 0 1 1 .894-.447L17.457 5.84A7.5 7.5 0 0 0 4.5 12M9.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm5 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/></svg>
-              Android
+              اندروید
             </span>
           </div>
           <div class="product-footer">
             <span class="product-stack font-mono">Flutter · PWA · WebSocket</span>
             <a href="https://bargbaz.nikamilabs.ir" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
-              Open <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              باز کردن <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
             </a>
           </div>
         </div>
@@ -189,18 +253,18 @@
           <img src="logos/vocabtrove-icon.svg" width="40" height="40" alt="" class="product-band-logo" />
           <div>
             <h3 class="product-name" id="vocab-name">VocabTrove</h3>
-            <span class="badge badge-green">Live</span>
+            <span class="badge badge-green">فعال</span>
           </div>
         </div>
         <div class="product-card-body">
           <p class="product-desc">
-            Language-learning app focused on reading and vocabulary. Tap to look up words,
-            save flashcards, and review with spaced repetition.
+            اپلیکیشن یادگیری زبان با تمرکز بر خواندن و واژگان. لمس کنید تا معنا بگیرید،
+            فلش‌کارت ذخیره کنید و با تکرار فاصله‌دار مرور کنید.
           </p>
           <div class="product-tags">
-            <span class="product-tag">Education</span>
-            <span class="product-tag">Mobile</span>
-            <span class="product-tag">Spaced Rep.</span>
+            <span class="product-tag">آموزش</span>
+            <span class="product-tag">موبایل</span>
+            <span class="product-tag">تکرار فاصله‌دار</span>
           </div>
           <div class="product-platforms">
             <span class="platform-badge platform-ios">
@@ -209,17 +273,17 @@
             </span>
             <span class="platform-badge platform-android">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.523 15.341a.5.5 0 0 1-.5.5H6.977a.5.5 0 0 1-.5-.5V9.5h11.046v5.841zm-10.98-9.5 1.195-2.39a.5.5 0 0 1 .894.447L7.5 5.8A7.5 7.5 0 0 0 4.5 12h15a7.5 7.5 0 0 0-3-6.2L15.368 3.898a.5.5 0 1 1 .894-.447L17.457 5.84A7.5 7.5 0 0 0 4.5 12M9.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm5 0a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/></svg>
-              Android
+              اندروید
             </span>
             <span class="platform-badge platform-web">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Web
+              وب
             </span>
           </div>
           <div class="product-footer">
             <span class="product-stack font-mono">Flutter · Next.js · Supabase</span>
             <a href="https://vocabtrove.nikamilabs.ir" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
-              Open <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+              باز کردن <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
             </a>
           </div>
         </div>
@@ -230,37 +294,37 @@
         <div class="product-card-header-band banner-purple">
           <img src="logos/levera-logo.svg" width="40" height="40" alt="" class="product-band-logo" />
           <div>
-            <h3 class="product-name" id="levera-name">Levera</h3>
-            <span class="badge badge-purple">Beta</span>
+            <h3 class="product-name" id="levera-name">لِورا</h3>
+            <span class="badge badge-purple">بتا</span>
           </div>
         </div>
         <div class="product-card-body">
           <p class="product-desc">
-            Margin trading simulator for Persian exchanges. Go long or short with 1×–20× leverage
-            on live Wallex order books with stop-loss and take-profit.
+            شبیه‌ساز معاملات مارجین برای صرافی‌های ایرانی. لانگ یا شورت با اهرم ۱× تا ۲۰×
+            روی دفتر سفارشات زنده والکس با حد ضرر و حد سود.
           </p>
           <div class="product-tags">
-            <span class="product-tag">Trading</span>
-            <span class="product-tag">Fintech</span>
-            <span class="product-tag">Live Data</span>
+            <span class="product-tag">معاملات</span>
+            <span class="product-tag">فین‌تک</span>
+            <span class="product-tag">داده زنده</span>
           </div>
           <div class="product-platforms">
             <span class="platform-badge platform-web">
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              Web App
+              وب اپ
             </span>
           </div>
           <div class="product-footer">
             <span class="product-stack font-mono">Python · FastAPI · Supabase</span>
-            <span class="btn-coming-soon">Coming soon</span>
+            <span class="btn-coming-soon">به زودی</span>
           </div>
         </div>
       </article>
 
-      <!-- More coming — full-width strip -->
-      <div class="product-upcoming-strip reveal reveal-d3" aria-label="More products coming">
+      <!-- More coming -->
+      <div class="product-upcoming-strip reveal reveal-d3" aria-label="محصولات بیشتری در راه است">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        <span>More products on the way</span>
+        <span>محصولات بیشتری در راه است</span>
       </div>
 
     </div>
@@ -274,128 +338,126 @@
 <section id="showcase" class="section section-muted" aria-labelledby="showcase-heading">
   <div class="container">
     <div class="section-header reveal">
-      <p class="eyebrow">Showcase</p>
-      <h2 class="section-title" id="showcase-heading">Built for real users.</h2>
-      <p class="section-sub">Production interfaces across mobile and web — designed for clarity, speed, and daily use.</p>
+      <p class="eyebrow">نمایشگاه</p>
+      <h2 class="section-title" id="showcase-heading">ساخته‌شده برای کاربران واقعی.</h2>
+      <p class="section-sub">رابط‌های کاربری در موبایل و وب — طراحی‌شده برای سرعت، وضوح و استفاده روزانه.</p>
     </div>
   </div>
 
-  <div class="phone-carousel reveal" role="region" aria-label="Product screenshots" aria-roledescription="carousel">
-
-    <!-- the stage clips overflow; cards are positioned by JS -->
+  <div class="phone-carousel reveal" role="region" aria-label="تصاویر محصولات" aria-roledescription="carousel">
     <div class="phone-stage" id="phoneStage">
       <div class="phone-track" id="phoneTrack">
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="1 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۱ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/bargbaz/Screenshot_1784278990.png" alt="BargBaz — Hokm game, trump suit selection" loading="lazy" />
+              <img src="screenshots/bargbaz/Screenshot_1784278990.png" alt="برگ‌باز — انتخاب حکم در بازی هوکم" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
-            <span class="phone-caption-tag">BargBaz</span>
-            Multiplayer card game
+            <span class="phone-caption-tag">برگ‌باز</span>
+            بازی ورق چندنفره
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="2 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۲ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/bargbaz/Screenshot_1784278939.png" alt="BargBaz — online room with QR code join" loading="lazy" />
+              <img src="screenshots/bargbaz/Screenshot_1784278939.png" alt="برگ‌باز — اتاق آنلاین با کد QR" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
-            <span class="phone-caption-tag">BargBaz</span>
-            Online rooms &amp; QR join
+            <span class="phone-caption-tag">برگ‌باز</span>
+            اتاق آنلاین و ورود با QR
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="3 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۳ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/bargbaz/Screenshot_1784278960.png" alt="BargBaz — active Hokm game screen" loading="lazy" />
+              <img src="screenshots/bargbaz/Screenshot_1784278960.png" alt="برگ‌باز — صفحه بازی فعال" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
-            <span class="phone-caption-tag">BargBaz</span>
-            Active game
+            <span class="phone-caption-tag">برگ‌باز</span>
+            بازی فعال
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="4 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۴ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/bargbaz/Screenshot_1784278948.png" alt="BargBaz — scoreboard" loading="lazy" />
+              <img src="screenshots/bargbaz/Screenshot_1784278948.png" alt="برگ‌باز — تابلوی امتیاز" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
-            <span class="phone-caption-tag">BargBaz</span>
-            Score board
+            <span class="phone-caption-tag">برگ‌باز</span>
+            تابلوی امتیاز
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="5 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۵ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/vocabTrove/vocabtrove-reader-phone.png" alt="VocabTrove — reader with tap-to-define lookup" loading="lazy" />
-            </div>
-          </div>
-          <figcaption class="phone-caption">
-            <span class="phone-caption-tag">VocabTrove</span>
-            Reading &amp; vocab lookup
-          </figcaption>
-        </figure>
-
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="6 of 8">
-          <div class="phone-frame">
-            <div class="phone-screen">
-              <img src="screenshots/vocabTrove/vocabtrove-fa-exam-dark.png" alt="VocabTrove — placement exam" loading="lazy" />
+              <img src="screenshots/vocabTrove/vocabtrove-reader-phone.png" alt="وکب‌تروو — خواندن با جستجوی لمسی واژه" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
             <span class="phone-caption-tag">VocabTrove</span>
-            Placement exam
+            خواندن و جستجوی واژه
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="7 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۶ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/vocabTrove/vocabtrove-fa-review-dark.png" alt="VocabTrove — flashcard review session" loading="lazy" />
+              <img src="screenshots/vocabTrove/vocabtrove-fa-exam-dark.png" alt="وکب‌تروو — آزمون سطح‌بندی" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
             <span class="phone-caption-tag">VocabTrove</span>
-            Flashcard review
+            آزمون سطح‌بندی
           </figcaption>
         </figure>
 
-        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="8 of 8">
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۷ از ۸">
           <div class="phone-frame">
             <div class="phone-screen">
-              <img src="screenshots/vocabTrove/vocabtrove-fa-profile.png" alt="VocabTrove — learner profile and stats" loading="lazy" />
+              <img src="screenshots/vocabTrove/vocabtrove-fa-review-dark.png" alt="وکب‌تروو — مرور فلش‌کارت" loading="lazy" />
             </div>
           </div>
           <figcaption class="phone-caption">
             <span class="phone-caption-tag">VocabTrove</span>
-            Learner profile
+            مرور فلش‌کارت
           </figcaption>
         </figure>
 
-      </div><!-- /phone-track -->
-    </div><!-- /phone-stage -->
+        <figure class="phone-card" role="group" aria-roledescription="slide" aria-label="۸ از ۸">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <img src="screenshots/vocabTrove/vocabtrove-fa-profile.png" alt="وکب‌تروو — پروفایل زبان‌آموز" loading="lazy" />
+            </div>
+          </div>
+          <figcaption class="phone-caption">
+            <span class="phone-caption-tag">VocabTrove</span>
+            پروفایل زبان‌آموز
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
 
     <div class="slider-controls">
-      <button class="slider-btn" id="sliderPrev" aria-label="Previous screenshot">
+      <button class="slider-btn" id="sliderPrev" aria-label="تصویر قبلی">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
       </button>
-      <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Slides"></div>
-      <button class="slider-btn" id="sliderNext" aria-label="Next screenshot">
+      <div class="slider-dots" id="sliderDots" role="tablist" aria-label="اسلایدها"></div>
+      <button class="slider-btn" id="sliderNext" aria-label="تصویر بعدی">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
       </button>
     </div>
 
-  </div><!-- /phone-carousel -->
+  </div>
 </section>
 
 
@@ -403,9 +465,9 @@
 <section id="stack" class="section section-dark" aria-labelledby="stack-heading">
   <div class="container">
     <div class="section-header reveal">
-      <p class="eyebrow">Tech Stack</p>
-      <h2 class="section-title" id="stack-heading">Built on solid foundations.</h2>
-      <p class="section-sub">We pick proven tools that let a small team move fast without cutting corners.</p>
+      <p class="eyebrow">فناوری</p>
+      <h2 class="section-title" id="stack-heading">ساخته‌شده بر پایه‌های محکم.</h2>
+      <p class="section-sub">ابزارهایی که به تیم کوچک اجازه می‌دهند سریع حرکت کنند بدون کنار گذاشتن کیفیت.</p>
     </div>
     <div class="stack-grid reveal">
       <div class="stack-item glass">
@@ -414,7 +476,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">Flutter</div>
-          <div class="stack-desc">Cross-platform mobile &amp; web</div>
+          <div class="stack-desc">موبایل و وب چندپلتفرمه</div>
         </div>
       </div>
       <div class="stack-item glass">
@@ -423,7 +485,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">Next.js</div>
-          <div class="stack-desc">Web frontend &amp; SSR</div>
+          <div class="stack-desc">فرانت‌اند وب و SSR</div>
         </div>
       </div>
       <div class="stack-item glass">
@@ -432,7 +494,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">Supabase</div>
-          <div class="stack-desc">Database, auth &amp; realtime</div>
+          <div class="stack-desc">پایگاه داده، احراز هویت و ریل‌تایم</div>
         </div>
       </div>
       <div class="stack-item glass">
@@ -441,7 +503,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">Python / FastAPI</div>
-          <div class="stack-desc">Backend APIs &amp; services</div>
+          <div class="stack-desc">API‌های بک‌اند و سرویس‌ها</div>
         </div>
       </div>
       <div class="stack-item glass">
@@ -450,7 +512,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">PWA</div>
-          <div class="stack-desc">Offline-ready web apps</div>
+          <div class="stack-desc">وب اپ آفلاین‌پذیر</div>
         </div>
       </div>
       <div class="stack-item glass">
@@ -459,7 +521,7 @@
         </div>
         <div class="stack-info">
           <div class="stack-name">WebSocket</div>
-          <div class="stack-desc">Real-time multiplayer sync</div>
+          <div class="stack-desc">همگام‌سازی ریل‌تایم چندنفره</div>
         </div>
       </div>
     </div>
@@ -473,16 +535,15 @@
 <section id="about" class="section section-muted" aria-labelledby="about-heading">
   <div class="container">
     <div class="section-header reveal">
-      <p class="eyebrow">About</p>
-      <h2 class="section-title" id="about-heading">Small team, sharp tools.</h2>
+      <p class="eyebrow">درباره ما</p>
+      <h2 class="section-title" id="about-heading">تیم کوچک، ابزارهای تیز.</h2>
       <p class="section-sub">
-        NiKami Labs is an indie software studio built on a simple idea: build tightly scoped,
-        production-quality products in-house — and keep shipping. Focused on typography,
-        interaction polish, and interfaces that feel intentional on every screen size.
+        نیکامی لبز یک استودیوی نرم‌افزاری مستقل است بر پایه یک ایده ساده: ساخت محصولات
+        متمرکز و با کیفیت حرفه‌ای — و ادامه دادن. تمرکز بر تایپوگرافی،
+        جزئیات تعامل و رابط‌هایی که در هر اندازه صفحه‌نمایش هدفمند احساس می‌شوند.
       </p>
     </div>
 
-    <!-- Team / Founder -->
     <div class="team-section reveal">
       <div class="team-divider" style="display:none"></div>
       <div class="team-grid">
@@ -496,11 +557,11 @@
             <div class="team-avatar-initials">NK</div>
           </div>
           <div class="team-info">
-            <div class="team-name">Founder</div>
-            <div class="team-role">Engineer &amp; Designer</div>
-            <p class="team-bio">Designing, building, and shipping every product end-to-end. From backend APIs to pixel-perfect mobile UIs.</p>
+            <div class="team-name">بنیان‌گذار</div>
+            <div class="team-role">مهندس و طراح</div>
+            <p class="team-bio">طراحی، ساخت و عرضه هر محصول از ابتدا تا انتها. از API‌های بک‌اند تا رابط‌های موبایل پیکسل‌پرفکت.</p>
             <div class="team-links">
-              <a href="mailto:nikamilabs@gmail.com" class="team-link" aria-label="Email">
+              <a href="mailto:nikamilabs@gmail.com" class="team-link" aria-label="ایمیل">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 nikamilabs@gmail.com
               </a>
@@ -510,9 +571,9 @@
         <div class="team-card team-card--cta glass">
           <div class="team-cta-content">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
-            <h3>Want to collaborate?</h3>
-            <p>We're always open to interesting ideas, partnerships, or contract work in mobile, fintech, or edtech.</p>
-            <a href="mailto:nikamilabs@gmail.com" class="btn btn-primary btn-sm">Get in touch</a>
+            <h3>می‌خواهید همکاری کنید؟</h3>
+            <p>همیشه به ایده‌های جالب، مشارکت‌ها یا قراردادهای موبایل، فین‌تک یا ادتک علاقه داریم.</p>
+            <a href="mailto:nikamilabs@gmail.com" class="btn btn-primary btn-sm">تماس بگیرید</a>
           </div>
         </div>
       </div>
@@ -527,18 +588,18 @@
     <div class="cta-band-inner glass">
       <div class="cta-band-glow" aria-hidden="true"></div>
       <h2 class="cta-band-title reveal" id="cta-heading">
-        Ready to explore?<br>
-        <span class="cta-highlight">Pick a product and dive in.</span>
+        آماده‌اید کاوش کنید؟<br>
+        <span class="cta-highlight">یک محصول انتخاب کنید و شروع کنید.</span>
       </h2>
-      <p class="cta-band-sub reveal reveal-d1">All products are live. No signup needed to start.</p>
+      <p class="cta-band-sub reveal reveal-d1">همه محصولات فعال هستند. نیازی به ثبت‌نام برای شروع نیست.</p>
       <div class="cta-band-actions reveal reveal-d2">
         <a href="https://vocabtrove.nikamilabs.ir" class="btn btn-accent btn-lg" target="_blank" rel="noopener">
           <img src="logos/vocabtrove-icon.svg" width="18" height="18" alt="" style="border-radius:4px" />
-          Open VocabTrove
+          باز کردن VocabTrove
         </a>
         <a href="https://bargbaz.nikamilabs.ir" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
           <img src="logos/bargbaz-final-pivot-icon.svg" width="18" height="18" alt="" style="border-radius:4px" />
-          Open BargBaz
+          باز کردن برگ‌باز
         </a>
       </div>
     </div>
@@ -557,9 +618,9 @@
           <img class="footer-logo-mark" src="logos/nikami-labs-mark.svg" width="32" height="32" alt="" />
           <span class="footer-logo-name">NiKami<span>Labs</span></span>
         </div>
-        <p class="footer-tagline">Indie software studio building focused tools for traders, learners, and players.</p>
+        <p class="footer-tagline">استودیوی نرم‌افزاری مستقل برای معامله‌گران، زبان‌آموزان و بازیکنان.</p>
         <div class="footer-social">
-          <a href="mailto:nikamilabs@gmail.com" class="social-link" aria-label="Email us">
+          <a href="mailto:nikamilabs@gmail.com" class="social-link" aria-label="ایمیل">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
           <a href="https://github.com/nikamilabs" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
@@ -569,34 +630,34 @@
       </div>
       <div class="footer-links-row">
         <div class="footer-col">
-          <h4>Products</h4>
+          <h4>محصولات</h4>
           <ul>
-            <li><a href="https://bargbaz.nikamilabs.ir" target="_blank" rel="noopener">BargBaz</a></li>
+            <li><a href="https://bargbaz.nikamilabs.ir" target="_blank" rel="noopener">برگ‌باز</a></li>
             <li><a href="https://vocabtrove.nikamilabs.ir" target="_blank" rel="noopener">VocabTrove</a></li>
-            <li><span class="footer-link-muted">Levera <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">Soon</span></span></li>
+            <li><span class="footer-link-muted">لِورا <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">به زودی</span></span></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Resources</h4>
+          <h4>منابع</h4>
           <ul>
-            <li><a href="https://bargbaz.nikamilabs.ir" target="_blank" rel="noopener">BargBaz</a></li>
+            <li><a href="https://bargbaz.nikamilabs.ir" target="_blank" rel="noopener">برگ‌باز</a></li>
             <li><a href="https://vocabtrove.nikamilabs.ir" target="_blank" rel="noopener">VocabTrove</a></li>
-            <li><span class="footer-link-muted">Levera <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">Soon</span></span></li>
+            <li><span class="footer-link-muted">لِورا <span class="badge badge-purple" style="font-size:9px;padding:1px 6px;">به زودی</span></span></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Studio</h4>
+          <h4>استودیو</h4>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#stack">Tech Stack</a></li>
-            <li><a href="mailto:nikamilabs@gmail.com">Contact</a></li>
+            <li><a href="#about">درباره ما</a></li>
+            <li><a href="#stack">فناوری</a></li>
+            <li><a href="mailto:nikamilabs@gmail.com">تماس</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2025 NiKami Labs. All rights reserved.</span>
-      <span class="footer-made">Crafted with care, shipped with pride</span>
+      <span>&copy; ۱۴۰۴ نیکامی لبز. تمام حقوق محفوظ است.</span>
+      <span class="footer-made">ساخته‌شده با دقت، عرضه‌شده با افتخار</span>
     </div>
   </div>
 </footer>
@@ -667,18 +728,16 @@
     let cur     = 0;
     let autoId  = null;
 
-    // build dots
     cards.forEach((_, i) => {
       const btn = document.createElement('button');
       btn.className = 'slider-dot';
       btn.setAttribute('role', 'tab');
-      btn.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      btn.setAttribute('aria-label', `رفتن به اسلاید ${i + 1}`);
       btn.setAttribute('aria-selected', String(i === 0));
       btn.addEventListener('click', () => goTo(i, true));
       dotsEl.appendChild(btn);
     });
 
-    // clicking a side card navigates to it
     cards.forEach((card, i) => {
       card.addEventListener('click', () => { if (i !== cur) goTo(i, true); });
     });
@@ -686,7 +745,6 @@
     function goTo(idx, userAction) {
       cur = (idx + total) % total;
 
-      // update classes
       cards.forEach((c, i) => {
         c.classList.toggle('is-active',   i === cur);
         c.classList.toggle('is-adjacent', i === (cur - 1 + total) % total || i === (cur + 1) % total);
@@ -698,16 +756,13 @@
         d.setAttribute('aria-selected', String(i === cur));
       });
 
-      // center the active card inside the stage
       const stageW  = stage.offsetWidth;
       const cardEl  = cards[cur];
       const cardW   = cardEl.offsetWidth;
       const cardGap = parseInt(getComputedStyle(cardEl).marginLeft) +
                       parseInt(getComputedStyle(cardEl).marginRight);
       const fullW   = cardW + cardGap;
-      // offset = position of active card's left edge relative to track start
       const offset  = cur * fullW;
-      // we want that card centered in the stage
       const shift   = offset - (stageW / 2) + (fullW / 2);
       track.style.transform = `translateX(${-shift}px)`;
 
@@ -722,13 +777,11 @@
     btnPrev.addEventListener('click', () => goTo(cur - 1, true));
     btnNext.addEventListener('click', () => goTo(cur + 1, true));
 
-    // keyboard
     track.closest('.phone-carousel').addEventListener('keydown', (e) => {
       if (e.key === 'ArrowLeft')  { goTo(cur - 1, true); e.preventDefault(); }
       if (e.key === 'ArrowRight') { goTo(cur + 1, true); e.preventDefault(); }
     });
 
-    // swipe
     let touchX = null;
     stage.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
     stage.addEventListener('touchend', e => {
@@ -738,20 +791,17 @@
       touchX = null;
     }, { passive: true });
 
-    // init — start at middle slide so both sides peek in symmetrically
     requestAnimationFrame(() => {
       goTo(Math.floor(total / 2));
       restartAuto();
     });
 
-    // pause on hover/focus
     const root = track.closest('.phone-carousel');
     root.addEventListener('mouseenter', () => clearInterval(autoId));
     root.addEventListener('mouseleave', restartAuto);
     root.addEventListener('focusin',   () => clearInterval(autoId));
     root.addEventListener('focusout',  restartAuto);
 
-    // recalc on resize
     let resizeTimer;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
