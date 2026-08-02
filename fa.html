@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>نیکامی لبز — نرم‌افزاری که معنا دارد</title>
-  <meta name="description" content="نیکامی لبز نرم‌افزارهای متمرکز می‌سازد: برگ‌باز، وکب‌تروو و لِورا. تیم کوچک، محصولات حرفه‌ای، در دسترس." />
+  <title>مرکز تحقیقات و نوآوری نیکامی — نرم‌افزاری که معنا دارد</title>
+  <meta name="description" content="مرکز تحقیقات و نوآوری نیکامی نرم‌افزارهای متمرکز می‌سازد: برگ‌باز، وکب‌تروو و لِورا. تیم کوچک، محصولات حرفه‌ای، در دسترس." />
   <meta name="theme-color" content="#0B1524" />
-  <meta property="og:title" content="نیکامی لبز — نرم‌افزاری که معنا دارد" />
-  <meta property="og:description" content="استودیوی نرم‌افزاری مستقل برای معامله‌گران، زبان‌آموزان و بازیکنان." />
+  <meta property="og:title" content="مرکز تحقیقات و نوآوری نیکامی — نرم‌افزاری که معنا دارد" />
+  <meta property="og:description" content="مرکز تحقیقات و نوآوری نیکامی — استودیوی نرم‌افزاری مستقل برای معامله‌گران، زبان‌آموزان و بازیکنان." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="logos/nikami-labs-mark.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
@@ -149,7 +149,7 @@
         <span class="highlight">حل می‌کند.</span>
       </h1>
       <p class="hero-sub">
-        نیکامی لبز ابزارهای متمرکزی برای معامله‌گران، زبان‌آموزان
+        مرکز تحقیقات و نوآوری نیکامی ابزارهای متمرکزی برای معامله‌گران، زبان‌آموزان
         و بازیکنان ورق می‌سازد. تیم کوچک. محصولات تیزبین. در حال اجرا.
       </p>
       <div class="hero-ctas">
@@ -538,7 +538,7 @@
       <p class="eyebrow">درباره ما</p>
       <h2 class="section-title" id="about-heading">تیم کوچک، ابزارهای تیز.</h2>
       <p class="section-sub">
-        نیکامی لبز یک استودیوی نرم‌افزاری مستقل است بر پایه یک ایده ساده: ساخت محصولات
+        مرکز تحقیقات و نوآوری نیکامی یک استودیوی نرم‌افزاری مستقل است بر پایه یک ایده ساده: ساخت محصولات
         متمرکز و با کیفیت حرفه‌ای — و ادامه دادن. تمرکز بر تایپوگرافی،
         جزئیات تعامل و رابط‌هایی که در هر اندازه صفحه‌نمایش هدفمند احساس می‌شوند.
       </p>
@@ -618,7 +618,7 @@
           <img class="footer-logo-mark" src="logos/nikami-labs-mark.svg" width="32" height="32" alt="" />
           <span class="footer-logo-name">NiKami<span>Labs</span></span>
         </div>
-        <p class="footer-tagline">استودیوی نرم‌افزاری مستقل برای معامله‌گران، زبان‌آموزان و بازیکنان.</p>
+        <p class="footer-tagline">مرکز تحقیقات و نوآوری نیکامی — نرم‌افزار متمرکز برای معامله‌گران، زبان‌آموزان و بازیکنان.</p>
         <div class="footer-social">
           <a href="mailto:nikamilabs@gmail.com" class="social-link" aria-label="ایمیل">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -656,7 +656,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; ۱۴۰۴ نیکامی لبز. تمام حقوق محفوظ است.</span>
+      <span>&copy; ۱۴۰۴ مرکز تحقیقات و نوآوری نیکامی. تمام حقوق محفوظ است.</span>
       <span class="footer-made">ساخته‌شده با دقت، عرضه‌شده با افتخار</span>
     </div>
   </div>
@@ -762,9 +762,10 @@
       const cardGap = parseInt(getComputedStyle(cardEl).marginLeft) +
                       parseInt(getComputedStyle(cardEl).marginRight);
       const fullW   = cardW + cardGap;
+      // RTL: track flows right-to-left, so invert the translation direction
       const offset  = cur * fullW;
       const shift   = offset - (stageW / 2) + (fullW / 2);
-      track.style.transform = `translateX(${-shift}px)`;
+      track.style.transform = `translateX(${shift}px)`;
 
       if (userAction) restartAuto();
     }
